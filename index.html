@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al-Husna — The 99 Names of Allah</title>
+  <meta name="description" content="Discover the 99 Names of Allah, one day at a time. Daily reflections, dua guidance, and a beautiful home screen widget." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1E1008;
+      --bg2: #2C1A0E;
+      --gold: #D4AA5A;
+      --gold-light: #E8CC88;
+      --cream: #F2E8D0;
+      --muted: #C8B898;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 40%, rgba(212,170,90,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .arabic-hero {
+      font-size: clamp(56px, 12vw, 96px);
+      color: var(--gold-light);
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 6vw, 56px);
+      color: var(--cream);
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .tagline {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--bg);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .cta:hover { background: var(--gold-light); }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+      margin: 80px auto;
+    }
+
+    /* Features */
+    .features {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 4vw, 36px);
+      color: var(--cream);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--bg2);
+      border: 1px solid rgba(212,170,90,0.15);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .feature-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(212,170,90,0.1);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 16px;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--gold-light); }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--muted);
+      opacity: 0.5;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <p class="eyebrow">Asma ul-Husna</p>
+    <div class="arabic-hero">الأسماء الحسنى</div>
+    <h1>The 99 Names of Allah</h1>
+    <p class="tagline">Discover the 99 Names of Allah, one day at a time. Daily reflections, dua guidance, and a beautiful home screen widget.</p>
+    <a class="cta" href="https://apps.apple.com/app/al-husna/id6761642038">Download on the App Store</a>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="features">
+    <h2 class="section-title">Everything you need to connect with each Name</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌙</div>
+        <div class="feature-title">Name of the Day</div>
+        <div class="feature-desc">A new name every day, determined by the Hijri calendar. The same name shown to everyone, everywhere.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <div class="feature-title">Home Screen Widget</div>
+        <div class="feature-desc">Beautiful small, medium, and large widgets so the Name of the Day is always visible — no need to open the app.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤲</div>
+        <div class="feature-title">Dua Guidance</div>
+        <div class="feature-desc">Practical duas connected to each name, for the real moments of your day — seeking patience, relief, or clarity.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <div class="feature-title">Deep Reflections</div>
+        <div class="feature-desc">Thoughtful, grounded reflections on each name drawn from Quran and Hadith — written to be felt, not just read.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <div class="feature-title">Daily Notifications</div>
+        <div class="feature-desc">Morning, afternoon, and evening reminders — each with different content so the name stays with you all day.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">❤️</div>
+        <div class="feature-title">Save Favorites</div>
+        <div class="feature-desc">Bookmark the names that speak to you most and return to them whenever you need a reminder.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <footer>
+    <div>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="mailto:smabp3@gmail.com">Support</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Al-Husna. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
